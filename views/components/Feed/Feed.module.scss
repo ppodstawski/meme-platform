@@ -1,0 +1,43 @@
+@use '../../styles/global.scss';
+
+.feedItem {
+  header {
+    h3 {
+      font-size: 42px;
+      text-align: center;
+      color: global.$main-text-color;
+    }
+    p {
+      display: inline-block;
+      padding: 1px 0 1px 16px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      font-size: 16px;
+      background-color: global.$primary-color;
+      color: white;
+      i {
+        text-decoration: underline;
+      }
+      time {
+        margin-right: 16px;
+      }
+    }
+  }
+  section {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: global.$main-text-color;
+  }
+  figure {
+    margin: 0 auto 20px;
+  }
+}
+
+.commentsLoginInfo {
+  display: inline-block;
+  padding: 3px 32px;
+  border-radius: 6px;
+  font-size: 16px;
+  background: global.$primary-color;
+  color: white;
+}

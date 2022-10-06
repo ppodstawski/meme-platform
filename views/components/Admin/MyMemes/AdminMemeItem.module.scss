@@ -1,0 +1,13 @@
+@use '../../../styles/global.scss';
+
+.adminActions {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: global.$quaternary-color;
+  button {
+    &:first-child {
+      margin-right: 40px;
+    }
+  }
+}

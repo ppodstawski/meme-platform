@@ -1,0 +1,67 @@
+@use '../../styles/global.scss';
+
+.inputField {
+  margin: 1rem 0;
+  width: 100%;
+  label {
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+
+  input,
+  textarea {
+    display: block;
+    padding: 0.5rem;
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+  }
+
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border-color: global.$primary-color;
+    color: global.$main-text-color;
+  }
+
+  :global {
+    .touched {
+      &.invalid {
+        border-color: red;
+        background: #ffecec;
+      }
+      &.valid {
+        border-color: green;
+      }
+    }
+
+    .validation-error-msg {
+      color: red;
+    }
+
+    .pass-result-weak,
+    .pass-result-medium,
+    .pass-result-strong {
+      display: inline-block;
+      padding: 4px 14px;
+      margin: 4px 0;
+      border-radius: 4px;
+      color: white;
+    }
+
+    .pass-result-weak {
+      background-color: red;
+    }
+
+    .pass-result-medium {
+      background-color: blue;
+      ~ .validation-error-msg {
+        color: global.$main-text-color;
+      }
+    }
+
+    .pass-result-strong {
+      background-color: green;
+    }
+  }
+}

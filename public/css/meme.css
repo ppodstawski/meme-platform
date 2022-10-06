@@ -1,0 +1,21 @@
+.meme-form {
+  width: 20rem;
+  max-width: 90%;
+  margin: auto;
+  display: block;
+}
+
+.meme-item {
+  width: 20rem;
+  max-width: 95%;
+  margin: 1rem;
+}
+
+.meme__title {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.meme__description {
+  text-align: center;
+}

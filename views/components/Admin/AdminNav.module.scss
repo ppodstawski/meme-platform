@@ -1,0 +1,17 @@
+@use '../../styles/global.scss';
+
+.adminNav {
+  position: fixed;
+  top: 120px;
+  z-index: global.$index-submenu;
+  width: 100%;
+  padding: 10px 10px 10px 185px;
+  border-bottom: 2px solid global.$primary-color;
+  background-color: white;
+  ul {
+    display: flex;
+    li {
+      margin: 0 40px 0 0;
+    }
+  }
+}
